@@ -26,8 +26,8 @@ const Navbar = () => {
       const sections = document.querySelectorAll('section[id]');
       
       sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        const sectionHeight = section.offsetHeight;
+        const sectionTop = (section as HTMLElement).offsetTop - 100;
+        const sectionHeight = (section as HTMLElement).offsetHeight;
         const sectionId = section.getAttribute('id') || '';
         
         if (window.scrollY > sectionTop && window.scrollY < sectionTop + sectionHeight) {
@@ -44,7 +44,7 @@ const Navbar = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-background/90 backdrop-blur-sm shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
         <a href="#home" className="text-xl font-bold text-navy">
-          Steve<span className="text-teal">Fortuin</span>
+          Steve<span className="text-blue">Fortuin</span>
         </a>
 
         {/* Desktop Navigation */}

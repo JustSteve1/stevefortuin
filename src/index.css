@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 173 80% 40%;
+    --primary: 220 80% 50%; /* Changed from teal to blue */
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96%;
@@ -25,7 +25,7 @@
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 173 80% 40%;
+    --accent: 220 80% 50%; /* Changed from teal to blue */
     --accent-foreground: 222 47% 11%;
 
     --destructive: 0 84% 60%;
@@ -33,7 +33,7 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 173 80% 40%;
+    --ring: 220 80% 50%; /* Changed from teal to blue */
 
     --radius: 0.5rem;
   }
@@ -48,7 +48,7 @@
     --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 173 80% 40%;
+    --primary: 220 80% 50%; /* Changed from teal to blue */
     --primary-foreground: 222 47% 11%;
 
     --secondary: 217 33% 17%;
@@ -57,7 +57,7 @@
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 173 80% 40%;
+    --accent: 220 80% 50%; /* Changed from teal to blue */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 63% 31%;
@@ -65,7 +65,7 @@
 
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 173 80% 40%;
+    --ring: 220 80% 50%; /* Changed from teal to blue */
   }
 }
 
@@ -82,7 +82,7 @@
 
 @layer components {
   .hero-gradient {
-    @apply bg-gradient-to-br from-teal-light/10 via-background to-background;
+    @apply bg-gradient-to-br from-blue-light/10 via-background to-background;
   }
   
   .section-padding {
@@ -90,7 +90,7 @@
   }
   
   .nav-link {
-    @apply relative px-2 py-1 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors duration-200 after:absolute after:w-full after:h-0.5 after:bg-teal after:bottom-0 after:left-0 after:scale-x-0 after:origin-bottom-right after:transition-transform hover:after:scale-x-100 hover:after:origin-bottom-left;
+    @apply relative px-2 py-1 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors duration-200 after:absolute after:w-full after:h-0.5 after:bg-blue after:bottom-0 after:left-0 after:scale-x-0 after:origin-bottom-right after:transition-transform hover:after:scale-x-100 hover:after:origin-bottom-left;
   }
   
   .nav-link.active {
@@ -98,10 +98,26 @@
   }
   
   .section-heading {
-    @apply text-3xl md:text-4xl font-bold text-navy mb-6 inline-block relative after:content-[''] after:absolute after:w-1/2 after:h-1 after:bg-teal after:bottom-0 after:left-0 after:-mb-2;
+    @apply text-3xl md:text-4xl font-bold text-navy mb-6 inline-block relative after:content-[''] after:absolute after:w-1/2 after:h-1 after:bg-blue after:bottom-0 after:left-0 after:-mb-2;
   }
   
   .project-card {
-    @apply border border-border rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-teal/10 hover:-translate-y-1;
+    @apply border border-border rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue/10 hover:-translate-y-1;
+  }
+
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+    width: fit-content;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50% - 1rem));
+    }
   }
 }

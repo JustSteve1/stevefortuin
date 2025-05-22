@@ -63,12 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Portfolio custom colors
+				// Portfolio custom colors - updated to blue
 				navy: '#0f172a',
-				teal: {
-					DEFAULT: '#0d9488',
-					light: '#5eead4',
-					dark: '#134e4a'
+				blue: {
+					DEFAULT: '#2563eb', // Royal blue
+					light: '#60a5fa', // Light blue
+					dark: '#1e40af'  // Dark blue
 				}
 			},
 			borderRadius: {
@@ -122,6 +122,10 @@ export default {
 						transform: 'scale(1)',
 						opacity: '1'
 					}
+				},
+				'scroll': {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-100%)' }
 				}
 			},
 			animation: {
@@ -130,6 +134,7 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out',
 				'fade-in-slow': 'fade-in 0.8s ease-out',
 				'scale-in': 'scale-in 0.5s ease-out',
+				'scroll': 'scroll 30s linear infinite'
 			},
 			fontFamily: {
 				'sans': ['Inter', 'sans-serif'],
