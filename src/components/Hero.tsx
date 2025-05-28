@@ -1,7 +1,6 @@
-
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -16,14 +15,23 @@ const Hero = () => {
             Professional <span className="text-blue">Portfolio</span>
           </h2>
           <p className="text-lg text-foreground/70 mb-8 max-w-2xl">
-            I'm a passionate professional dedicated to creating impactful solutions. 
-            Welcome to my portfolio showcasing my projects and expertise.
+            Welcome to my portfolio showcasing my projects and experience
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button className="bg-blue hover:bg-blue-dark text-white flex items-center gap-2 px-6">
               View Projects <ArrowRight size={16} />
             </Button>
-            <Button variant="outline" className="border-blue text-blue hover:bg-blue/5">
+            <Button
+              variant="outline"
+              className="border-blue text-blue hover:bg-blue/5"
+            >
+              Download Resume
+            </Button>
+            <a href="mailto:mrstevefortuin@gmail.com?Subject=Hey%Steve"></a>
+            <Button
+              variant="outline"
+              className="border-blue text-blue hover:bg-blue/5"
+            >
               Contact Me
             </Button>
           </div>

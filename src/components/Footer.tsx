@@ -1,9 +1,8 @@
-
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-navy text-white py-12">
       <div className="container mx-auto px-4">
@@ -13,31 +12,54 @@ const Footer = () => {
               Steve<span className="text-blue">Fortuin</span>
             </h2>
             <p className="text-white/70 max-w-md">
-              Creating beautiful digital experiences through innovative design and development.
+              Designed and built with Loveable & React
             </p>
           </div>
-          
+
           <div className="text-center md:text-right">
             <p className="text-white/70">
               &copy; {currentYear} Steve Fortuin. All rights reserved.
             </p>
-            <p className="text-white/50 text-sm mt-1">
-              Designed and built with passion.
-            </p>
+            <p className="text-white/50 text-sm mt-1"></p>
           </div>
         </div>
-        
+
         <div className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <nav className="flex gap-6 mb-6 md:mb-0">
-            <a href="#home" className="text-white/70 hover:text-blue transition-colors">Home</a>
-            <a href="#about" className="text-white/70 hover:text-blue transition-colors">About</a>
-            <a href="#projects" className="text-white/70 hover:text-blue transition-colors">Projects</a>
-            <a href="#contact" className="text-white/70 hover:text-blue transition-colors">Contact</a>
+            <a
+              href="#home"
+              className="text-white/70 hover:text-blue transition-colors"
+            >
+              Home
+            </a>
+            <a
+              href="#about"
+              className="text-white/70 hover:text-blue transition-colors"
+            >
+              About
+            </a>
+            <a
+              href="#projects"
+              className="text-white/70 hover:text-blue transition-colors"
+            >
+              Projects
+            </a>
+            <a
+              href="#contact"
+              className="text-white/70 hover:text-blue transition-colors"
+            >
+              Contact
+            </a>
           </nav>
-          
+
           <p className="text-white/50 text-sm">
-            <a href="#" className="hover:text-blue transition-colors">Privacy Policy</a> | 
-            <a href="#" className="hover:text-blue transition-colors ml-2">Terms of Service</a>
+            <a href="#" className="hover:text-blue transition-colors">
+              Privacy Policy
+            </a>{" "}
+            |
+            <a href="#" className="hover:text-blue transition-colors ml-2">
+              Terms of Service
+            </a>
           </p>
         </div>
       </div>
